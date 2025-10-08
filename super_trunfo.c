@@ -1,4 +1,3 @@
-//Criei um programa em C que permite o cadastro de cartas representando cidades, utilizando scanf para entrada de dados e printf para exibir as informações.
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
