@@ -7,23 +7,15 @@
 int main() {
 // Área para definição das variáveis para armazenar as propriedades das cidades
 // Declaração das variáveis da Carta 1
-  char estado1 [3];
-  char cod_carta1 [4];
-  char cidade1 [50];
-  int populacao1;
-  float area_km1;
-  float pib1;
-  int num_turistico1;
+  char estado1 [3], cod_carta1 [4], cidade1 [50]; // Declaração múltipla de variáveis do tipo
+  int populacao1, num_turistico1;
+  float area_km1, pib1, densidade_populacional1;
 
   //Declaração das variáveis da Carta 2
-  char estado2 [3];
-  char cod_carta2 [4];
-  char cidade2 [50];
-  int populacao2;
-  float area_km2;
-  float pib2;
-  int num_turistico2;
-
+  char estado2 [3], cod_carta2 [4], cidade2 [50];
+  int populacao2, num_turistico2;
+  float area_km2, pib2, densidade_populacional2;
+  
 // Área para entrada de dados
 // Entrada de dados para cadastro da Carta 1
   printf("----- Cadastro da Carta 1 -----\n");
@@ -48,6 +40,12 @@ int main() {
   printf("Informe a quantidade de pontos turísticos: ");
   scanf("%d", &num_turistico1);
 
+  densidade_populacional1 = populacao1 / area_km1; // Cálculo da densidade populacional
+  printf("A densidade populacional é: %.2f habitantes por Km²\n", densidade_populacional1); // Exibição da densidade populacional
+
+  pib1 = pib1 / populacao1; // Conversão do PIB para bilhões
+  printf("O PIB em bilhões é: %.2f bilhões de reais\n", pib1); // Exibição do PIB em bilhões
+  
   // Entrada de dados para cadastro da Carta 2
   printf("\n----- Cadastro da Carta 2 -----\n");
   printf("\nInforme o Estado: ");
@@ -71,6 +69,12 @@ int main() {
 
   printf("Informe a quantidade de pontos turísticos: ");
   scanf("%d", &num_turistico2);
+
+  densidade_populacional2 = populacao2 / area_km2; // Cálculo da densidade populacional
+  printf("A densidade populacional é: %.2f habitantes por Km²\n", densidade_populacional2); // Exibição da densidade populacional
+
+  pib1 = pib1 / populacao1; // Conversão do PIB para bilhões
+  printf("O PIB em bilhões é: %.2f bilhões de reais\n", pib1); // Exibição do PIB em bilhões
 
 // Área para exibição dos dados da cidade
 // Exibição dos dados da Carta 1
